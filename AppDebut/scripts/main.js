@@ -12,6 +12,7 @@ const tempPourH = document.querySelectorAll('.heure-prevision-valeur');
 const joursSemaine = document.querySelectorAll('.jour-prevision-nom');
 const temperatureSemaine = document.querySelectorAll('.jour-prevision-temp')
 
+
 if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position => {
 

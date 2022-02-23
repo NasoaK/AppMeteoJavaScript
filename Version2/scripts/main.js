@@ -38,7 +38,7 @@ function AppelApiCity(long, lat){
     .then((data) => {
         nameCity = data[0]['name'];
         console.log(nameCity);
-        localisation.innerText = nameCity;
+        
     })
 }
 
@@ -55,7 +55,7 @@ function AppelAPI(long, lat) {
         console.log(resultatsAPI);
         temps.innerText = resultatsAPI.current.weather[0].description;
         temperature.innerText = `${Math.trunc(resultatsAPI.current.temp)}°`
-        //localisation.innerText = resultatsAPI.timezone;
+        localisation.innerText = resultatsAPI.timezone;
 
 
         // les heures, par tranche de trois, avec leur temperature.
